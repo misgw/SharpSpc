@@ -5,10 +5,18 @@
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>preview</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="SharpSpc.Constants">
+      <Static>True</Static>
+    </Using>
+    <Using Include="System.Runtime.CompilerServices" />
   </ItemGroup>
 
 </Project>

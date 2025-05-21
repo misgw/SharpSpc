@@ -1,10 +1,6 @@
-﻿using System.IO;
-
-namespace SharpSpc;
+﻿namespace SharpSpc;
 internal class SingleEvenlySpacedXFileHandler(Stream stream, ReadOptions options) : AbstractFileHandler(stream, options)
 {
-
-    // Token: 0x06000069 RID: 105 RVA: 0x000035E8 File Offset: 0x000017E8
     public override void ReadSubfiles()
     {
         SubHeader subHeader = ReadSubHeader();
